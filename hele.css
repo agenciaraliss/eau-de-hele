@@ -738,6 +738,15 @@ body.template-404 h2.h5{font-family:Montserrat,sans-serif!important;font-size:14
 body.template-404 .container.mb-4>p,body.template-404 .container.mb-4>div:not(.row){font-family:Montserrat,sans-serif;font-size:13px;color:#8B6F56;margin-bottom:26px}
 body.template-404 .js-item-product{text-align:left}
 @media (max-width:767px){body.template-404 .page-header h1{font-size:26px!important}}
+
+/* ===== cards: sem linhas vazias ===== */
+.eh-nocmp .eh-card .item-price-container .js-compare-price-display{display:none!important;min-height:0!important}
+.eh-n1 .eh-card .js-item-name{min-height:0!important}
+@media (max-width:767px){.eh-card .item-description{padding-top:10px!important}.eh-card .js-item-name{margin-bottom:4px!important}.eh-card .eh-card-sz{margin-bottom:8px!important}.eh-card .item-price-container{margin-bottom:10px!important}.eh-card .item-actions .btn{height:40px!important}}
+/* ===== cep: campo e botao iguais ===== */
+.js-toggle-shipping .js-shipping-input,.js-toggle-shipping input.form-control{height:48px!important;min-height:48px!important;max-height:48px!important;box-sizing:border-box!important;border:1px solid #EAD8C9!important;border-radius:10px!important;font-size:16px!important;line-height:1.2!important;padding:0 14px!important;-webkit-appearance:none;appearance:none;margin:0!important}
+.js-toggle-shipping .js-calculate-shipping{height:48px!important;min-height:48px!important;max-height:48px!important;box-sizing:border-box!important;padding:0 20px!important;line-height:1!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;margin:0!important}
+.js-toggle-shipping .js-shipping-calculator-form .form-group,.js-toggle-shipping .js-shipping-calculator-form .row{align-items:flex-start!important}
 /* eh-pdp-css */
 .eh-pdp .breadcrumbs{font-family:var(--body-font);font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px!important}
 .eh-pdp .breadcrumbs a,.eh-pdp .breadcrumbs .crumb{color:#6F665D!important;text-decoration:none}
