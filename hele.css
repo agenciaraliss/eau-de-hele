@@ -968,6 +968,8 @@ body.template-page .eh-pg-box strong{color:#1A1A1A;font-weight:600}
 .section-adbar .js-swiper-adbar-prev,.section-adbar .js-swiper-adbar-next{display:none!important}
 }
 #eh-pg .eh-pg-cta a.btn.btn-primary,.eh-pg-box .eh-pg-cta a.btn.btn-primary,.eh-pg-cta a.btn.btn-primary{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.section-adbar .js-swiper-adbar .swiper-wrapper{justify-content:flex-start!important}
+.section-adbar .js-swiper-adbar{overflow:hidden!important}
 
 /* eh-pdp-css */
 .eh-pdp .breadcrumbs{font-family:var(--body-font);font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px!important}
