@@ -821,6 +821,41 @@ html.eh-vlb-open{overflow:hidden}
 /* videos: 4 por vez + setas sempre */
 @media (min-width:992px){.eh-vid-in{max-width:1060px!important}.eh-vid-c{flex-basis:calc((100% - 42px)/4)!important}}
 @media (max-width:767px){.eh-vid-a{display:flex!important;top:50%;margin-top:-18px;width:36px;height:36px;background:rgba(255,255,255,.94)!important;box-shadow:0 4px 14px rgba(0,0,0,.18)}.eh-vid-a.prev{left:8px!important}.eh-vid-a.next{right:8px!important}.eh-vid-a[disabled]{opacity:0!important}.eh-vid-a[style*="none"]{display:none!important}}
+
+/* ===== ajustes mobile 18/11 ===== */
+.eh-vid-a:focus,.eh-vid-a:focus-visible{outline:0!important}
+.eh-vid-nav{display:none}
+@media (max-width:767px){
+.eh-vid-nav{display:flex;justify-content:center;gap:12px;margin-top:14px}
+.eh-vid-nav .eh-vid-a{position:static!important;display:flex!important;margin:0!important;width:40px;height:40px;background:#fff!important;border:1px solid #EAD8C9!important;box-shadow:none!important;opacity:1!important}
+.eh-vid-nav .eh-vid-a[disabled]{opacity:.35!important}
+.eh-vid-nav .eh-vid-a svg{stroke:#6B4A24!important}
+.eh-vid-nav .eh-vid-a:active{background:#A67324!important;border-color:#A67324!important}
+.eh-vid-nav .eh-vid-a:active svg{stroke:#fff!important}
+.eh-ch{padding:30px 0 22px!important}
+.eh-ch .section-title{margin-bottom:20px!important}
+.eh-ch .swiper-slide{width:128px!important;max-width:128px!important;margin-right:14px!important}
+.eh-ch .swiper-wrapper{padding-left:16px!important;padding-right:16px!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y!important;scrollbar-width:none}
+.eh-ch .swiper-wrapper::-webkit-scrollbar{display:none}
+.modal-quickshop{max-height:88vh!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch;border-radius:18px 18px 0 0!important}
+.modal-quickshop .modal-body{height:auto!important;max-height:none!important;overflow:visible!important}
+.modal-quickshop .quickshop-image-container{max-width:150px!important;margin:6px auto 0!important;padding:0!important}
+.modal-quickshop .col-md-6.mb-1{margin-bottom:0!important}
+.modal-quickshop .js-item-variants{padding:12px 16px 18px!important}
+.modal-quickshop .js-item-variants .mb-4{margin-bottom:12px!important}
+}
+@media (hover:none){.eh-vid-a:hover{background:#fff}.eh-vid-a:hover svg{stroke:#6B4A24}.eh-vid-c:hover{transform:none!important;box-shadow:none!important}}
+/* cards dentro da compra rapida: sem painel */
+.modal-quickshop .eh-card>.item,.modal-quickshop .eh-card{background:none!important;border:0!important;padding:0!important;box-shadow:none!important;display:block!important}
+/* bolinhas dos carrosseis de produto */
+.section-home .swiper-pagination:not(.js-swiper-home-pagination):not(.js-swiper-home-pagination-mobile),.section-featured-home .swiper-pagination{display:flex!important;justify-content:center;align-items:center;flex-wrap:nowrap;gap:4px;max-width:180px;margin:14px auto 0!important;overflow:hidden;position:static!important}
+.section-home .swiper-pagination:not(.js-swiper-home-pagination):not(.js-swiper-home-pagination-mobile) .swiper-pagination-bullet,.section-featured-home .swiper-pagination .swiper-pagination-bullet{flex:0 0 5px;width:5px!important;height:5px!important;margin:0!important;border-radius:50%;background:#D9BFA6!important;opacity:1!important;transform:none!important}
+.section-home .swiper-pagination:not(.js-swiper-home-pagination):not(.js-swiper-home-pagination-mobile) .swiper-pagination-bullet-active,.section-featured-home .swiper-pagination .swiper-pagination-bullet-active{flex-basis:16px;width:16px!important;border-radius:4px;background:#A67324!important}
+
+/* cep no iphone: tema encolhe o campo com transform */
+.js-toggle-shipping .js-shipping-input,.js-toggle-shipping input.form-control,.js-shipping-calculator-form input.form-control{transform:none!important;-webkit-transform:none!important;transform-origin:0 0!important;width:100%!important;max-width:100%!important;margin:0!important;font-size:16px!important;height:48px!important;min-height:48px!important}
+.js-toggle-shipping .js-shipping-calculator-form .row,.js-toggle-shipping .js-shipping-calculator-form .form-group>.row,.js-toggle-shipping .js-shipping-calculator-form .position-relative{align-items:stretch!important}
+.js-toggle-shipping .js-calculate-shipping{align-self:flex-start!important}
 /* eh-pdp-css */
 .eh-pdp .breadcrumbs{font-family:var(--body-font);font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px!important}
 .eh-pdp .breadcrumbs a,.eh-pdp .breadcrumbs .crumb{color:#6F665D!important;text-decoration:none}
@@ -970,6 +1005,8 @@ html.eh-vlb-open{overflow:hidden}
 }
 
 @media (max-width:767px){.eh-pdp .product-detail-slider{margin:0 12px!important;width:calc(100% - 24px)!important;max-width:calc(100% - 24px)!important}.eh-pdp h1.js-product-name{font-size:26px!important}.eh-pdp .js-price-display{font-size:22px!important}}
+
+@media (max-width:767px){.eh-pdp .product-thumbs-container,.eh-pdp .js-swiper-product-thumbs{height:auto!important;min-height:70px;overflow-y:visible!important}.eh-pdp .js-swiper-product-thumbs{padding:2px 0 4px!important}.eh-pdp .js-swiper-product-thumbs .swiper-wrapper{height:66px!important;align-items:flex-start}.eh-pdp .js-swiper-product-thumbs .swiper-slide,.eh-pdp .js-swiper-product-thumbs .product-thumb{box-sizing:border-box!important;height:64px!important;width:64px!important;padding:0!important}.eh-pdp .js-swiper-product-thumbs .product-thumb img{position:static!important;transform:none!important}}
 /* eh-home-css */
 #eh-fam,#eh-art{background:#FFFFFF}
 .hm-in{max-width:1180px;margin:0 auto;padding:0 48px}
@@ -1069,5 +1106,14 @@ section.section-categories-home.eh-ch{background:#FFFFFF!important}
 .eh-ch .home-category-image.eh-edge img{inset:auto!important;left:8%!important;top:-2.5%!important;width:84%!important;height:105%!important;object-fit:cover!important;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%)}
 
 /* evita piscar no modelo antigo */
-.section-categories-home:not(.eh-ch){opacity:0;animation:ehFo 0s linear 2.6s forwards}
+.section-categories-home:not(.eh-ch){opacity:0;animation:ehFo 0s linear 4s forwards}
 @keyframes ehFo{to{opacity:1}}
+
+/* categorias no celular: compacto e com rolagem */
+@media (max-width:767px){
+.eh-ch{padding:30px 0 22px!important}
+.eh-ch .section-title{margin-bottom:20px!important}
+.eh-ch .swiper-slide{width:128px!important;max-width:128px!important;margin-right:14px!important}
+.eh-ch .swiper-wrapper{padding-left:16px!important;padding-right:16px!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y!important;scrollbar-width:none}
+.eh-ch .swiper-wrapper::-webkit-scrollbar{display:none}
+}
