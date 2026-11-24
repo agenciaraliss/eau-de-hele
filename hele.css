@@ -1011,6 +1011,10 @@ body.template-page .eh-pg-box strong{color:#1A1A1A;font-weight:600}
 /* ===== anti-flash: esconde o layout original ate a personalizacao aplicar ===== */
 html:not(.eh-ready) body>*:not(.js-head-main):not(script):not(style){opacity:0;animation:ehCloak 0s linear 3s forwards}
 @keyframes ehCloak{to{opacity:1}}
+/* ===== produto sem variacao: nao mostrar o botao reserva junto com o Comprar ===== */
+.eh-card .item-actions .js-addtocart-placeholder[style*="display: none"],.eh-card .item-actions .js-addtocart-placeholder[style*="display:none"],.js-item-product .js-product-form .js-addtocart-placeholder[style*="display: none"],.js-item-product .js-product-form .js-addtocart-placeholder[style*="display:none"]{display:none!important}
+.js-item-product input.js-addtocart[type=submit]{text-align:center!important;padding-left:12px!important;padding-right:12px!important;text-indent:0!important;width:100%!important}
+.eh-card .item-actions input.js-addtocart[style*="display: none"],.eh-card .item-actions input.js-addtocart[style*="display:none"],.js-item-product .js-product-form input.js-addtocart[style*="display: none"],.js-item-product .js-product-form input.js-addtocart[style*="display:none"]{display:none!important}
 
 /* eh-pdp-css */
 .eh-pdp .breadcrumbs{font-family:var(--body-font);font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px!important}
